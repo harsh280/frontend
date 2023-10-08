@@ -13,7 +13,7 @@ export default function Page(){
             body : JSON.stringify({email,password})
         },
         );
-        const data = await response.json();
+        const data = await response.json(); 
         //console.log(data);
         // if(data == null){
         //     alert("User not found Kindly Signup");

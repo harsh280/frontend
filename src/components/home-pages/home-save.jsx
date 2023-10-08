@@ -2,22 +2,22 @@ import SaveImage from "./home-save-image"
 import Link from "next/link"
 const HomeSave = () => {
     return (
-        <div className="h-full w-full flex bg-[#DAFFF6]"> 
-            <div className="w-[40%]">
-                <div className="w-full mt-[30%] ml-[16%]">
+        <div className="h-full w-full lg:flex block bg-[#DAFFF6]"> 
+            <div className="lg:w-[40%] w-full">
+                <div className="w-full lg:mt-[30%] lg:pt-0 pt-10 lg:ml-[16%]">
                     <h1 className="font-bold text-[#006B6C] text-6xl text-center">Save ideas you like</h1>
                 </div>
-                <div className="w-[70%] ml-[30%] mt-[5%]">
+                <div className="lg:w-[70%] w-[90%] lg:ml-[30%] lg:mt-[5%] ml-4 mt-4 mb-4">
                     <p className="text-[#006B6C] text-2xl text-center">
                         Collect your favorites so you can get back to them later
                     </p>
                     <Link href = "/explore">
-                    <button className="mt-5 ml-[35%] bg-[#006B6C] text-[#DAFFF6] w-[90px] h-[50px] font-bold rounded-full">Explore</button>
+                    <button className="mt-5 lg:ml-[35%] ml-[37%] bg-[#006B6C] text-[#DAFFF6] w-[90px] h-[50px] font-bold rounded-full">Explore</button>
                     </Link>
                 </div>
             </div>
-            <div className="w-[60%] flex">
-                <div className="block ml-[10%] pl-10 pt-5">
+            <div className="lg:w-[60%] w-full flex">
+                <div className="block lg:ml-[10%] lg:pl-10 m-4 pt-5">
                     <div className="pb-5">
                     <SaveImage 
                         height = "350px"

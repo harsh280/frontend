@@ -1,11 +1,11 @@
 import Link from "next/link"
 const HomeShop = () => {
     return (
-        <div className="h-full w-full flex">
-            <div className="w-[50%]  relative flex">
+        <div className="h-full w-full lg:flex block">
+            <div className="lg:w-[50%] w-full relative flex">
                 <img className="w-full h-full" src = "https://s.pinimg.com/webapp/shop-de8ddf10.png"/>
                 <div className="absolute ml-[12%] mt-[5%]">
-                    <img className="w-[250px] h-[450px] rounded-[30px]" src = "https://s.pinimg.com/webapp/creator-pin-img-3bed5463.png"/>
+                    <img className="w-[250px] lg:h-[450px] h-[400px] rounded-[30px]" src = "https://s.pinimg.com/webapp/creator-pin-img-3bed5463.png"/>
                 </div>
                 <div className="absolute ml-[8%] mt-[60%]">
                     <img className="w-[100px] h-[100px] rounded-full" src = "https://s.pinimg.com/webapp/creator-avatar-262dfeba.png"/>    
@@ -15,9 +15,9 @@ const HomeShop = () => {
                     <p className="text-white font-normal text-xl">56.7k followers</p>
                 </div>
             </div>
-            <div className="w-[50%] bg-[#FFE2EB]">
-                <div className="w-[70%] mt-[20%] ml-[15%]">
-                    <h1 className="leading-normal text-6xl text-[#C32F00] font-bold text-center">See it, make it, try it, do it</h1>
+            <div className="lg:w-[50%] w-full bg-[#FFE2EB] p-4">
+                <div className="lg:w-[70%] w-[90%] lg:mt-[20%] mt-[0px] lg:ml-[15%] ml-[0px]">
+                    <h1 className="lg:leading-normal leading-tight text-6xl text-[#C32F00] font-bold text-center">See it, make it, try it, do it</h1>
                     <p className="text-center text-2xl text-[#C32F00] p-4">
                         The best part of Pinterest is discovering new things and ideas from people around the world.
                     </p>
