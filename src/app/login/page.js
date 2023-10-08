@@ -8,12 +8,9 @@ export default function Page(){
     const[password,setPassword] = useState("");
     const loginAuth = async () => {
         console.log(email);
-        const response = await fetch("/api/auth/getUser",{
+        const response = await fetch("https://backend-mauve-nine.vercel.app/api/auth/getUser",{
             method : "POST",
-            body : JSON.stringify({email,password}),
-            headers: {
-                "Content-Type": "application/json",
-              }
+            body : JSON.stringify({email,password})
         },
         );
         const data = await response.json();

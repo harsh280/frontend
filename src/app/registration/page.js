@@ -10,9 +10,9 @@ export default function Page(){
         if(!name || !email || !password)
         return alert("All fields are mandatory");
         console.log(name);
-        let result = await fetch("/api/auth",{
+        let result = await fetch("https://backend-mauve-nine.vercel.app/api/auth",{
             method : "POST",
-            body : JSON.stringify({name,email,password})
+            body : JSON.stringify({name,email,password}),
         });
         result = await result.json();
         if(result.success){

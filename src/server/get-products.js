@@ -1,5 +1,5 @@
 export const getProducts = async () => {
-    const response = await fetch("./api/products",{cache:"no-store"});
+    const response = await fetch("https://backend-mauve-nine.vercel.app/api/products",{cache:"no-store"});
     const data = await response.json();
     if(data.success){
         const products = data.result;
