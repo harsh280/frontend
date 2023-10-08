@@ -6,9 +6,9 @@ const HomeSignUp = () => {
                 <img className="blur-sm w-full h-full" src = "https://thinkorion.com/wp-content/uploads/2022/06/1024x576.png"/>
             </div>
             <div className="absolute lg:top-[25%] top-[10%] left-[11%] w-[30%]">
-                    <h1 className="text-white lg:text-7xl text-4xl text-left font-semibold leading-normal">Sign up to get your ideas</h1>
+                    <h1 className="text-white lg:text-7xl text-2xl text-left font-semibold leading-normal">Sign up to get your ideas</h1>
             </div>
-            <div className="absolute top-[35%] right-[11%] w-[30%]">
+            <div className="absolute top-[35%] right-[20%] w-[30%]">
             <Link href = "/registration">
             <button className="mt-5 bg-red-600 text-white lg:w-[190px] w-[170px] h-[50px] text-medium font-semibold rounded-full">Sign Up to Pinterest</button>
             </Link>
