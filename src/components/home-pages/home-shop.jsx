@@ -5,7 +5,7 @@ const HomeShop = () => {
             <div className="lg:w-[50%] w-full relative flex">
                 <img className="w-full h-full" src = "https://s.pinimg.com/webapp/shop-de8ddf10.png"/>
                 <div className="absolute ml-[12%] mt-[5%]">
-                    <img className="w-[250px] lg:h-[450px] h-[400px] rounded-[30px]" src = "https://s.pinimg.com/webapp/creator-pin-img-3bed5463.png"/>
+                    <img className="lg:w-[250px] lg:h-[450px] w-[150px] h-[300px] rounded-[30px]" src = "https://s.pinimg.com/webapp/creator-pin-img-3bed5463.png"/>
                 </div>
                 <div className="absolute ml-[8%] mt-[60%]">
                     <img className="w-[100px] h-[100px] rounded-full" src = "https://s.pinimg.com/webapp/creator-avatar-262dfeba.png"/>    
