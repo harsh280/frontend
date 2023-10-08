@@ -1,6 +1,7 @@
+"use client";
 import HomeNav from "@/components/home-nav"
 import ExploreFeed from "@/components/explore-components/explore-feed"
-export default function Page(){
+const Page = () => {
     return (
         <div>
             <HomeNav />
@@ -8,3 +9,4 @@ export default function Page(){
         </div>
     )
 }
+export default Page;

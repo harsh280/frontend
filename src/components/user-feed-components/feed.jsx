@@ -1,19 +1,5 @@
-"use client";
 import UserFeedImage from "./user-feed-image";
-import { UserFeedData } from "@/mockData/user-feed-data";
-import { UserFeedData1 } from "@/mockData/user-feed-data1";
-
-const getProducts = async () => {
-    const response = await fetch("http://localhost:3000/api/products",{cache:"no-store"});
-    const data = await response.json();
-    //console.log(data);
-    if(data.success){
-        return data.result;
-    }
-    else{
-        return {success:false}
-    }
-}
+import { getProducts } from "@/server/get-products";
 
 const Feed = async () => {
     let resultData = await getProducts();
@@ -27,6 +13,7 @@ const Feed = async () => {
                                 width={width}
                                 src={src}
                                 LikeCount = {LikeCount}
+                                iconDisplay = "flex"
                             />
                         </div>
                     )

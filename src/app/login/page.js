@@ -8,7 +8,7 @@ export default function Page(){
     const[password,setPassword] = useState("");
     const loginAuth = async () => {
         console.log(email);
-        const response = await fetch("http://localhost:3000/api/auth/getUser",{
+        const response = await fetch("/api/auth/getUser",{
             method : "POST",
             body : JSON.stringify({email,password}),
             headers: {

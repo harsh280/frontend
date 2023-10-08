@@ -10,7 +10,7 @@ export default function Page(){
         if(!name || !email || !password)
         return alert("All fields are mandatory");
         console.log(name);
-        let result = await fetch("http://localhost:3000/api/auth",{
+        let result = await fetch("/api/auth",{
             method : "POST",
             body : JSON.stringify({name,email,password})
         });

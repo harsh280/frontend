@@ -1,16 +1,5 @@
-"use client";
 import UserFeedImage from "../user-feed-components/user-feed-image";
-const getProducts = async () => {
-    const response = await fetch("http://localhost:3000/api/products",{cache:"no-store"});
-    const data = await response.json();
-    //console.log(data);
-    if(data.success){
-        return data.result;
-    }
-    else{
-        return {success:false}
-    }
-}
+import { getProducts } from "@/server/get-products";
 
 const ExploreFeed = async () => {
     let resultData = await getProducts();
