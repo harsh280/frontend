@@ -8,7 +8,7 @@ const HomeNav = () => {
             <h1 className="pl-2 pt-0.5 text-xl font-semibold text-red-600">Pinterest</h1>
             </div>
             <div className="flex absolute right-5">
-            <div className='flex gap-11 p-4 mr-4'>
+            <div className='hidden gap-11 p-4 mr-4 lg:flex'>
                 <a className = 'font-semibold' href = '#'>About</a>
                 <a className = 'font-semibold' href = "#">Business</a>
                 <a className = 'font-semibold' href = "#">Blog</a>
